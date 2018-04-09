@@ -6,6 +6,7 @@ import com.lightbend.lagom.javadsl.api.Descriptor;
 import com.lightbend.lagom.javadsl.api.Service;
 import com.lightbend.lagom.javadsl.api.ServiceCall;
 import com.lightbend.lagom.javadsl.api.transport.Method;
+import com.silenceonthewire.exceptions.api.ExternalServiceExceptionSerializer;
 
 import java.util.List;
 import java.util.Optional;
@@ -32,6 +33,7 @@ public interface TypeService extends Service {
                 Service.restCall(Method.POST, "/api/type", this::create),
                 Service.restCall(Method.PUT, "/api/type", this::update),
                 Service.restCall(Method.DELETE, "/api/type/:id", this::delete)
-        ).withAutoAcl(true);
+        ).withExceptionSerializer(ExternalServiceExceptionSerializer.INSTANCE)
+                .withAutoAcl(true);
     }
 }

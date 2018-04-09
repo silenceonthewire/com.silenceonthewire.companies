@@ -9,6 +9,7 @@ import com.lightbend.lagom.javadsl.persistence.ReadSide;
 import com.lightbend.lagom.javadsl.persistence.cassandra.CassandraSession;
 import com.silenceonthewire.company.api.Company;
 import com.silenceonthewire.company.api.CompanyService;
+import play.Logger;
 
 import javax.inject.Inject;
 import java.util.List;
@@ -121,10 +122,14 @@ public class CompanyServiceImpl implements CompanyService {
                 Company company = companyFuture.toCompletableFuture().get().get();
                 PersistentEntityRef<CompanyCommand> ref = typeEntityRef(company);
                 return ref.ask(new CompanyCommand.DeleteCompany(company));
+
             } catch (InterruptedException e) {
                 e.printStackTrace();
                 return CompletableFuture.completedFuture(Done.getInstance());
             } catch (ExecutionException e) {
+                e.printStackTrace();
+                return CompletableFuture.completedFuture(Done.getInstance());
+            } catch (Exception e) {
                 e.printStackTrace();
                 return CompletableFuture.completedFuture(Done.getInstance());
             }

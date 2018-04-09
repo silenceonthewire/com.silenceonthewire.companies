@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ScalaCompilerConfiguration">
-    <profile name="sbt 1" modules="type-stream-api,type-stream-impl,company-stream-api,company-stream-impl,company,company-api,company-impl,type-api,type-impl" />
+    <profile name="sbt 1" modules="type-stream-api,type-stream-impl,company-stream-api,company-stream-impl,company,company-api,company-impl,exception-api,type-api,type-impl" />
   </component>
 </project>

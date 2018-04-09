@@ -110,6 +110,9 @@ public class TypeServiceImpl implements TypeService {
             } catch (ExecutionException e) {
                 e.printStackTrace();
                 return CompletableFuture.completedFuture(Done.getInstance());
+            } catch (Exception e){
+                e.printStackTrace();
+                return CompletableFuture.completedFuture(Done.getInstance());
             }
         };
     }
