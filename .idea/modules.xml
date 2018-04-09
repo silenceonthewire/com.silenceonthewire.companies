@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/company.iml" filepath="$PROJECT_DIR$/.idea/modules/company.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/company-api.iml" filepath="$PROJECT_DIR$/.idea/modules/company-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/company-api-build.iml" filepath="$PROJECT_DIR$/.idea/modules/company-api-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/company-build.iml" filepath="$PROJECT_DIR$/.idea/modules/company-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/company-impl.iml" filepath="$PROJECT_DIR$/.idea/modules/company-impl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/company-impl-build.iml" filepath="$PROJECT_DIR$/.idea/modules/company-impl-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/type-api.iml" filepath="$PROJECT_DIR$/.idea/modules/type-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/type-api-build.iml" filepath="$PROJECT_DIR$/.idea/modules/type-api-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/type-impl.iml" filepath="$PROJECT_DIR$/.idea/modules/type-impl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/type-impl-build.iml" filepath="$PROJECT_DIR$/.idea/modules/type-impl-build.iml" />
+    </modules>
+  </component>
+</project>

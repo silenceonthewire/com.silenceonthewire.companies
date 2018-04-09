@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="company-impl" target="1.8" />
+      <module name="company-stream-impl" target="1.8" />
+      <module name="type-impl" target="1.8" />
+      <module name="type-stream-impl" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
